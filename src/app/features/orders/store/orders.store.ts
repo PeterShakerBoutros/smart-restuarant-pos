@@ -13,10 +13,12 @@ export class OrdersStore {
 
   readonly totalOrders = computed(() => this.orders().length);
 
-  loadOrders(): void {
-    this.ordersService.getOrders().subscribe({
-      next: orders => this.orders.set(orders)
-    });
-  }
+ loadOrders(): void {
+
+  this.ordersService.getOrders().subscribe({
+    next: orders => this.orders.set(orders)
+  });
+
+}
 
 }

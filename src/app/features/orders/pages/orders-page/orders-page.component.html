@@ -1,24 +1,27 @@
-<p>orders-page works!</p>
-<h1>Smart Restaurant POS</h1>
+<h1>Live Orders</h1>
 
-<h3>Total Orders: {{ store.totalOrders() }}</h3>
+<p>Total Orders: {{ store.totalOrders() }}</p>
 
-<hr>
+<div class="orders-grid">
 
-@for(order of store.orders(); track order.id){
+  @for(order of store.orders(); track order.id){
 
-<div style="border:1px solid #ccc;padding:10px;margin-bottom:10px">
+  <div class="order-card">
 
-  <h3>{{order.id}}</h3>
+    <h3>{{order.id}}</h3>
 
-  <p>Customer : {{order.customer.name}}</p>
+    <p><strong>Customer:</strong> {{order.customer.name}}</p>
 
-  <p>Status : {{order.status}}</p>
+    <p><strong>Status:</strong> {{order.status}}</p>
 
-  <p>Priority : {{order.priority}}</p>
+    <p><strong>Priority:</strong> {{order.priority}}</p>
 
-  <p>Total : {{order.totalPrice}} EGP</p>
+    <p><strong>Type:</strong> {{order.type}}</p>
+
+    <p><strong>Total:</strong> {{order.totalPrice}} EGP</p>
+
+  </div>
+
+  }
 
 </div>
-
-}

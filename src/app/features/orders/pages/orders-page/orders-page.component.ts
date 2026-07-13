@@ -1,5 +1,6 @@
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Component, inject, OnInit } from '@angular/core';
+
 import { OrdersStore } from '../../store/orders.store';
 
 @Component({
@@ -9,11 +10,11 @@ import { OrdersStore } from '../../store/orders.store';
   templateUrl: './orders-page.component.html',
   styleUrl: './orders-page.component.css'
 })
-export class OrdersPageComponent implements OnInit {
+export class OrdersPageComponent {
 
   readonly store = inject(OrdersStore);
 
-  ngOnInit(): void {
+  constructor() {
     this.store.loadOrders();
   }
 
