@@ -1,5 +1,5 @@
 export enum OrderType {
-  WalkIn = 'Walk-in',
+  WalkIn = 'WalkIn',
   Delivery = 'Delivery',
   Online = 'Online'
 }
