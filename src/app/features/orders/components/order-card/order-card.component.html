@@ -1,0 +1,32 @@
+<div class="order-card">
+
+  <h3>{{ order.id }}</h3>
+
+  <p>
+    <strong>Customer:</strong>
+    {{ order.customer.name }}
+  </p>
+
+  <p>
+    <strong>Status:</strong>
+  </p>
+
+  <app-order-status-badge [status]="order.status">
+  </app-order-status-badge>
+
+  <p>
+    <strong>Priority:</strong>
+    {{ order.priority }}
+  </p>
+
+  <p>
+    <strong>Type:</strong>
+    {{ order.type }}
+  </p>
+
+  <p>
+    <strong>Total:</strong>
+    {{ order.totalPrice }} EGP
+  </p>
+
+</div>
