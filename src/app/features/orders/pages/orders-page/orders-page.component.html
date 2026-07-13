@@ -1,0 +1,24 @@
+<p>orders-page works!</p>
+<h1>Smart Restaurant POS</h1>
+
+<h3>Total Orders: {{ store.totalOrders() }}</h3>
+
+<hr>
+
+@for(order of store.orders(); track order.id){
+
+<div style="border:1px solid #ccc;padding:10px;margin-bottom:10px">
+
+  <h3>{{order.id}}</h3>
+
+  <p>Customer : {{order.customer.name}}</p>
+
+  <p>Status : {{order.status}}</p>
+
+  <p>Priority : {{order.priority}}</p>
+
+  <p>Total : {{order.totalPrice}} EGP</p>
+
+</div>
+
+}
