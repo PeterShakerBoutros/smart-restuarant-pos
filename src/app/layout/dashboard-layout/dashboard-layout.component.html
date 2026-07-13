@@ -1,15 +1,9 @@
-<div class="layout">
+<app-sidebar></app-sidebar>
 
-  <app-header></app-header>
+<main>
 
-  <div class="content">
+  <app-kitchen-load></app-kitchen-load>
 
-    <app-sidebar></app-sidebar>
+  <router-outlet></router-outlet>
 
-    <main>
-      <router-outlet></router-outlet>
-    </main>
-
-  </div>
-
-</div>
+</main>

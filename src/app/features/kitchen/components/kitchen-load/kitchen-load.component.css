@@ -1,0 +1,34 @@
+.kitchen-card {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  background: white;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+
+.status {
+  font-weight: bold;
+}
+
+
+.low {
+  color: green;
+}
+
+
+.medium {
+  color: orange;
+}
+
+
+.high {
+  color: red;
+}

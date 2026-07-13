@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 
 import { HeaderComponent } from '../header/header.component';
 import { SidebarComponent } from '../sidebar/sidebar.component';
+import { KitchenLoadComponent } from '../../features/kitchen/components/kitchen-load/kitchen-load.component';
 
 @Component({
   selector: 'app-dashboard-layout',
@@ -10,7 +11,8 @@ import { SidebarComponent } from '../sidebar/sidebar.component';
   imports: [
     RouterOutlet,
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    KitchenLoadComponent
   ],
   templateUrl: './dashboard-layout.component.html',
   styleUrl: './dashboard-layout.component.css'

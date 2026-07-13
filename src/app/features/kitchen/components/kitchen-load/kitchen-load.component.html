@@ -1,0 +1,19 @@
+<div class="kitchen-card">
+
+  <div class="header">
+    <h3>Kitchen Load</h3>
+
+    <span class="status" [class.high]="status() === 'High'" [class.medium]="status() === 'Medium'"
+      [class.low]="status() === 'Low'">
+
+      {{ status() }}
+
+    </span>
+  </div>
+
+
+  <p-progressBar [value]="load()" [showValue]="true">
+  </p-progressBar>
+
+
+</div>
